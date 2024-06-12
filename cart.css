@@ -1,0 +1,483 @@
+/*  Navbar css apply  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Spartan', sans-serif;
+
+
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background-color: oldlace;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: darkorange;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: red;
+    color: darkorange;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+
+    display: none;
+
+}
+
+#close {
+    display: none;
+    align-items: center;
+}
+
+
+
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+button.normal:hover {
+    color: white;
+    background-color: #088178;
+}
+
+
+
+
+
+
+
+
+button.white {
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 11px 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+
+
+.section-m1 {
+    margin: 20px 20px;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .coll {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+
+footer a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+
+footer.followw {
+
+    margin-top: 20px;
+}
+
+
+footer.followw i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install1 .Roww img {
+    border: 1px solid#088178;
+    border-radius: 6px;
+
+}
+
+footer .install1 img {
+    margin-top: 10px 0 15px 0;
+}
+
+footer .followw i:hover,
+footer a:hover {
+    color: #088178;
+
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.coll h4 {
+    font-weight: 900;
+    color: red;
+    font-size: 15px;
+}
+
+footer .copyright p {
+    font-size: 16px;
+}
+
+/* about page*/
+
+#page-header {
+    background-image: url(img/b1shopbanner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+
+#page-header.about-header {
+    background-image: url(img/bannerabout.png);
+}
+
+
+
+#cart{
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+
+
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+
+
+#cart table thead {
+
+    border: 1px solid #e2e9e1;
+
+    border-left: none;
+    border-right: none;
+
+}
+
+#cart table thead td{
+
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+
+#cart table tbody tr td{
+    padding-top: 15px;
+
+}
+#cart table tbody td{
+    font-size: 13px;
+
+
+
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal  h3{
+padding-bottom: 15px;
+
+}
+
+
+#coupon input{
+padding: 10px 20px;
+outline: none;
+width: 60%;
+margin-right: 10px;
+border: 1px solid #e2e9e1;
+}
+#coupon  button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+
+
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid  #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+@media (max-width:799px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3D6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    #mobile i {
+
+
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 27px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+
+}
+
+
+
+
+@media (max-width:477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+
+    footer .copyright {
+        text-align: start;
+        font-size: 14px;
+    }
+
+    /*cart page*/
+
+
+    #cart-add {
+
+ 
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+      
+    }
+
+    #subtotal {
+        width: 100%;
+  
+        padding:20px;
+    }
+
+
+}
